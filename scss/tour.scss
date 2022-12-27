@@ -1,0 +1,75 @@
+.tour {
+  margin: 50px auto 0;
+  min-height: 392px;
+  background: linear-gradient(100.49deg, #8dbef3 1.62%, #3a78bc 98.14%);
+  border-radius: 50px;
+  padding-left: 99px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 125px;
+  }
+
+  .title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+
+  .description {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+
+  .btn {
+    @include btnBig(#000, #fff, #fff);
+    margin-top: 20px;
+
+    &:hover {
+      @include btnBigHover;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .tour {
+    max-width: calc(100% - 30px);
+  }
+}
+
+@media (max-width: 991px) {
+  .tour {
+    min-height: 0;
+    padding: 30px;
+    img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .tour {
+    .title {
+      font-size: 30px;
+      line-height: 140%;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+}

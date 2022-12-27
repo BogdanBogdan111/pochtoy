@@ -1,0 +1,337 @@
+.user-room {
+  width: 100%;
+  max-width: 778px;
+  padding: 20px 0 0 0;
+
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .align-end {
+    align-items: flex-end;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .time {
+    p {
+      &:first-child {
+        font-size: 11px;
+        line-height: 14px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #7d8590;
+        font-weight: 600;
+      }
+
+      &:nth-child(2) {
+        margin: 1px 0 0 0;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .balance {
+    text-align: right;
+
+    p {
+      &:first-child {
+        font-size: 11px;
+        line-height: 14px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #7d8590;
+        font-weight: 600;
+      }
+
+      &:nth-child(2) {
+        margin: 1px 0 0 18px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #ff006d;
+        font-weight: 600;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 12px;
+      color: #b9b9b9;
+    }
+  }
+
+  .top-text {
+    margin: 44px 0 32px 0;
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #7d8590;
+
+      &:first-child {
+        margin: 0 0 5px 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2b343f;
+      }
+
+      &.warning {
+        position: relative;
+        margin: 20px 0 0 0;
+        padding: 0 0 0 41px;
+        display: flex;
+        flex-direction: row;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          background-image: url("https://evowebstudio.github.io/pochtoy/img/icons/i_pink.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  .white-block {
+    padding: 12px 32px;
+    margin: 0 0 9px;
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 60px #d5eaf1;
+    border-radius: 10px;
+
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 30px;
+      color: #7d8590;
+
+      span {
+        color: #2b343f;
+      }
+
+      &.num {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 40px;
+        color: #000000;
+      }
+
+      &.status {
+        &.ok {
+          color: #3dab92;
+        }
+
+        &.warning {
+          color: #ff006d;
+        }
+      }
+    }
+
+    .btn {
+      text-align: center;
+
+      &.medium {
+        width: 203px;
+      }
+
+      &.big {
+        width: 260px;
+      }
+    }
+
+    .arrow {
+      margin: 0 0 0 20px;
+      width: 12px;
+      height: 8px;
+      background-image: url("https://evowebstudio.github.io/pochtoy/img/icons/arrow-down_green.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    table {
+      tbody {
+        tr {
+          td {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 40px;
+            color: #2b343f;
+
+            &:first-child {
+              color: #abbdd2;
+            }
+
+            &:nth-child(2) {
+              padding: 0 0 0 30px;
+            }
+
+            .btn {
+              margin: 0 0 0 32px;
+            }
+          }
+        }
+      }
+    }
+
+    &.incoming-package {
+      .description {
+        .info {
+          margin: 10px 0 0 0;
+
+          p {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 40px;
+            color: #abbdd2;
+
+            span {
+              margin: 0 3px 0 0;
+              color: #2b343f;
+            }
+          }
+        }
+
+        .checkbox-row {
+          input[type="checkbox"] {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+          }
+
+          input[type="checkbox"] + label {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+            p {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
+              color: #3578dc;
+            }
+
+            span {
+              display: block;
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 20px;
+              color: #000000;
+            }
+          }
+
+          input[type="checkbox"] + label::before {
+            margin: 0 20px 0 0;
+            content: "";
+            display: inline-block;
+            width: 39px;
+            height: 39px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid #e4e4e4;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 29px 18px;
+          }
+
+          input[type="checkbox"]:checked + label::before {
+            border: 2px solid #3578dc;
+            /**/
+            background-image: url("https://evowebstudio.github.io/pochtoy/img/icons/checked_blue.svg");
+          }
+        }
+      }
+
+      .image {
+        p {
+          display: flex;
+          position: relative;
+          padding: 0 38px 0 0;
+          max-width: 189px;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          text-align: right;
+          color: #77889c;
+
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            background-image: url("https://evowebstudio.github.io/pochtoy/img/icons/i_pink.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+    }
+  }
+
+  .incoming-total {
+    margin: 30px 0 16px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    color: #5977a0;
+  }
+
+  .copy-block {
+    position: relative;
+    width: 223px;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    input[type="text"] {
+      padding: 0 0 0 20px;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 40px;
+      color: #2b343f;
+    }
+
+    .copy {
+      position: absolute;
+      right: 12px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 40px;
+      color: #b9b9b9;
+    }
+  }
+}

@@ -1,0 +1,147 @@
+.benefits {
+  margin: 97px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    max-width: 449px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+
+    span {
+      color: #3a78bc;
+
+      line-height: 50px;
+    }
+  }
+
+  .sub-title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 50px;
+    color: #000000;
+  }
+
+  .btn {
+    @include btnBig(#fff, #3a78bc, #3a78bc);
+    margin-top: 24px;
+
+    &:hover {
+      @include btnBigHover;
+    }
+  }
+
+  .content {
+    max-width: 633px;
+
+    .item {
+      width: 633px;
+      margin-bottom: 20px;
+      padding: 24px 40px 32px 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      background: #ffffff;
+      box-shadow: 0px 0px 60px #d5eaf1;
+      border-radius: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      img {
+        margin-top: 12px;
+      }
+
+      .text {
+        margin-left: 24px;
+
+        .title {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 50px;
+          color: #000000;
+        }
+
+        .description {
+          max-width: 345px;
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 30px;
+          color: #586271;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .benefits {
+    padding: 0 15px;
+    .content {
+      .item {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .benefits {
+    flex-direction: column;
+    .title {
+      text-align: center;
+    }
+    .sub-title {
+      text-align: center;
+    }
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .content {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .benefits {
+    .title {
+      font-size: 28px;
+    }
+    .content {
+      .item {
+        flex-direction: column;
+        padding: 20px;
+        img {
+          margin-top: 0;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .text {
+          margin-left: 0;
+          .title {
+            font-size: 18px;
+            line-height: 120%;
+            margin-top: 10px;
+          }
+          .description {
+            text-align: center;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

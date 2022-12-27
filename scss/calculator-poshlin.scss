@@ -1,0 +1,281 @@
+.calculator-poshlin {
+  margin: 65px auto 0;
+  .formula {
+    background: #ffffff;
+    box-shadow: 0px 0px 60px #d5eaf1;
+    border-radius: 40px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+  }
+  .heading {
+    margin-top: 100px;
+    .title {
+      font-family: "Gilroy";
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 80px;
+      text-align: center;
+      letter-spacing: -0.01em;
+      color: #3a78bc;
+    }
+    .text {
+      font-family: "Gilroy";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      color: #000000;
+      max-width: 415px;
+      margin: 20px auto 0;
+    }
+  }
+  .settings {
+    display: flex;
+    justify-content: center;
+  }
+  .dropdowns {
+    margin-top: 55px;
+    background: #ffffff;
+    box-shadow: 0px 0px 60px #d5eaf1;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 80px;
+
+    .dropdown {
+      display: flex;
+      align-items: center;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      & + .dropdown {
+        margin-left: 50px;
+      }
+      .img {
+        display: flex;
+      }
+      .info {
+        margin-left: 20px;
+        .name {
+          font-family: "Gilroy";
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 30px;
+          color: #586271;
+        }
+        .selected {
+          font-family: "Gilroy";
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 30px;
+          display: flex;
+          align-items: center;
+          color: #000000;
+          .ico {
+            margin-left: 10px;
+          }
+        }
+        .list {
+          display: none;
+        }
+      }
+    }
+  }
+  .information {
+    margin-top: 65px;
+    .list {
+      background: #ffffff;
+      border: 2px solid #ff86ba;
+      box-shadow: 0px 0px 60px #d5eaf1;
+      border-radius: 40px;
+      .row {
+        height: 130px;
+        display: flex;
+        align-items: center;
+        padding: 0 70px;
+        & + .row {
+          border-top: 1px solid #ff2380;
+        }
+        .title {
+          width: 45%;
+          font-family: "Gilroy";
+          line-height: 30px;
+          color: #000000;
+          &.medium {
+            font-weight: 500;
+            font-size: 20px;
+          }
+          &.bold {
+            font-weight: 700;
+            font-size: 24px;
+          }
+          .gray {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            opacity: 0.75;
+          }
+        }
+        .price {
+          font-family: "Gilroy";
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+          color: #000000;
+        }
+      }
+    }
+    .bottom {
+      margin: 40px auto 0;
+      max-width: 768px;
+      font-family: "Gilroy";
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.75);
+    }
+  }
+  .how-to {
+    max-width: 700px;
+    margin: 100px auto;
+    text-align: center;
+    font-family: "Gilroy";
+    .title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #000000;
+    }
+    .description {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      color: #586271;
+      p {
+        font-family: "Gilroy";
+        font-size: 17px;
+        & + p {
+          margin-top: 30px;
+        }
+      }
+    }
+    .link {
+      font-family: "Gilroy";
+      display: block;
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #3a78bc;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .calculator-poshlin {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .calculator-poshlin {
+    .formula {
+      text-align: center;
+    }
+    .information {
+      .list {
+        .row {
+          height: 100px;
+          padding: 0 35px;
+          .title {
+            &.bold {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .calculator-poshlin {
+    .formula {
+      font-size: 14px;
+      line-height: 120%;
+      height: auto;
+      padding: 15px 10px;
+    }
+    .heading {
+      margin-top: 40px;
+      .title {
+        font-size: 36px;
+        line-height: 120%;
+      }
+    }
+    .dropdowns {
+      flex-direction: column;
+      padding: 20px;
+      .dropdown {
+        width: 100%;
+        & + .dropdown {
+          margin-top: 20px;
+          margin-left: 0;
+        }
+      }
+    }
+    .information .list .row {
+      padding: 0 10px;
+      height: 85px;
+      .title {
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+        &.bold {
+          font-size: 14px;
+          line-height: 120%;
+        }
+        &.medium {
+          font-size: 14px;
+          line-height: 120%;
+        }
+        .gray {
+          font-size: 12px;
+          line-height: 100%;
+        }
+      }
+      .price {
+        font-size: 14px;
+        line-height: 120%;
+      }
+    }
+    .how-to {
+      margin: 60px auto;
+      .description {
+        font-size: 16px;
+        line-height: 24px;
+        p {
+          font-size: 16px;
+        }
+      }
+      .link {
+        font-size: 16px;
+      }
+    }
+  }
+}

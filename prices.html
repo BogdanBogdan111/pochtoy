@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>pochtoy.com</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="lang-selector">
+                <img src="img/flags/rus.svg" alt="" class="flag">
+                <p>Рус</p>
+                <button class="open"></button>
+            </div>
+            <ul>
+                <li><a href="#">Как покупать</a></li>
+                <li><a href="#">Распродажи</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Бонусы</a></li>
+                <li><a href="#">Блог</a></li>
+                <li class="parent"><a href="#">Еще</a></li>
+            </ul>
+            <button class="btn btn-pink">Заказать товар из США</button>
+            <div class="alert-block active"></div>
+            <a href="#" class="login">Войти</a>
+        </div>
+    </header>
+
+    <div class="container-fluid free-services">
+        <ul class="breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Цены</a></li>
+        </ul>
+        <div class="heading">
+            <p>Услуги доставки из США от Pochtoy.com</p>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="line"></div>
+                <div class="description">
+                    <p class="title">Ваш личный адрес для покупок </p>
+                    <p class="text">на нашем современном автоматизированном складе в безналоговом Делавэре</p>
+                    <p class="label">Бесплатно</p>
+                </div>
+                <img src="img/pic15.png" alt="">
+            </div>
+            <div class="row">
+                <img src="img/pic16.png" alt="">
+                <div class="line"></div>
+                <div class="description">
+                    <p class="title">Объединение нескольких посылок в одну</p>
+                    <p class="text">ведь часто отправлять несколько посылок в одной коробке гораздо выгоднее, чем по
+                        одной</p>
+                    <p class="label">Бесплатно</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="description">
+                    <p class="title">Удаление лишней упаковки, обувных коробок и печатной рекламы</p>
+                    <p class="text">чтобы посылка весила как можно меньше и доставка для вас была как можно выгоднее</p>
+                    <p class="label">Бесплатно</p>
+                </div>
+                <div class="line"></div>
+                <img src="img/pic17.png" alt="">
+            </div>
+            <div class="row">
+                <img src="img/pic18.png" alt="">
+                <div class="description">
+                    <p class="title">Хранение входящих посылок 70 дней</p>
+                    <p class="text">чем больше срок хранения посылок на складе – тем больше вы сможете собрать посылок
+                        для объединения</p>
+                    <p class="label">Бесплатно</p>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid calc-sidebar-wrapper">
+        <div class="calc-sidebar">
+            <div class="tabs">
+                <p class="active">Регулярный прайс</p>
+                <p>Постоянным клиентам</p>
+            </div>
+            <div class="content">
+                <p class="title">Онлайн-калькулятор стоимости доставки товара</p>
+                <p class="text">Задайте необходимые параметры посылки и калькулятор расчитает приблизительную стоимость
+                    доставки вашей посылки из США.</p>
+            </div>
+        </div>
+
+        <div class="calc f-column">
+            <div class="field country">
+                <label for="">Страна</label>
+                <select name="country" id="">
+                    <option value="">Выберите страну</option>
+                </select>
+            </div>
+            <div class="field city">
+                <label for="">Город</label>
+                <select name="сity" id="">
+                    <option value="">Выберите город</option>
+                </select>
+            </div>
+            <div class="field postcode">
+                <label for="">Индекс</label>
+                <input type="text" autocomplete="off" id="postcode" value="" placeholder="Введите индекс"
+                    name="postcode">
+            </div>
+            <div class="field weight">
+                <label for="">Вес посылки</label>
+                <input type="text" autocomplete="off" id="weight" value="" placeholder="Введите вес" name="weight">
+                <div class="weight-unit">
+                    <select autocomplete="off" name="weight-unit">
+                        <option value="kg" selected="selected">кг</option>
+                        <option value="lb">фунты</option>
+                    </select>
+                </div>
+            </div>
+            <p class="field-footer">Дополнительные параметры</p>
+        </div>
+    </div>
+
+    <div class="container-fluid options">
+        <div class="item">
+            <div class="logo">
+                <div class="img">
+                    <img src="img/logos/1.svg" alt="">
+                </div>
+                <p>Superfast</p>
+            </div>
+            <div class="timing">
+                <p class="val">5-10 дней</p>
+                <p class="label">Сроки</p>
+            </div>
+            <div class="price">
+                <p class="val">$11.99</p>
+                <p class="label">Стоимость</p>
+            </div>
+            <a href="#" class="btn">Оформить посылку</a>
+        </div>
+        <div class="item">
+            <div class="logo">
+                <div class="img">
+                    <img src="img/logos/express.png" alt="">
+                </div>
+                <p>Fastbox</p>
+            </div>
+            <div class="timing">
+                <p class="val">5-10 дней</p>
+                <p class="label">Сроки</p>
+            </div>
+            <div class="price">
+                <p class="val">$14.99</p>
+                <p class="label">Стоимость</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="logo">
+                <div class="img">
+                    <img src="img/logos/3.svg" alt="">
+                </div>
+                <p>PERFUMEBOX</p>
+            </div>
+            <div class="timing">
+                <p class="val">7-16 дней</p>
+                <p class="label">Сроки</p>
+            </div>
+            <div class="price">
+                <p class="val">$16.99</p>
+                <p class="label">Стоимость</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="logo">
+                <div class="img">
+                    <img src="img/logos/econom.png" alt="">
+                </div>
+                <p>Econom Lite</p>
+            </div>
+            <div class="timing">
+                <p class="val">20-30 дней</p>
+                <p class="label">Сроки</p>
+            </div>
+            <div class="price">
+                <p class="val">$26.99</p>
+                <p class="label">Стоимость</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="logo">
+                <div class="img">
+                    <img src="img/logos/express.png" alt="">
+                </div>
+                <p>Express</p>
+            </div>
+            <div class="timing">
+                <p class="val">8-16 дней</p>
+                <p class="label">Сроки</p>
+            </div>
+            <div class="price">
+                <p class="val">$34.99</p>
+                <p class="label">Стоимость</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="logo">
+                <div class="img">
+                    <img src="img/logos/econom.png" alt="">
+                </div>
+                <p>Econom</p>
+            </div>
+            <div class="timing">
+                <p class="val">20-30 дней</p>
+                <p class="label">Сроки</p>
+            </div>
+            <div class="price">
+                <p class="val">$43.99</p>
+                <p class="label">Стоимость</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="logo">
+                <div class="img">
+                    <img src="img/logos/ems.svg" alt="">
+                </div>
+                <p>EMS RUSSIA</p>
+            </div>
+            <div class="timing">
+                <p class="val">12-21 дней</p>
+                <p class="label">Сроки</p>
+            </div>
+            <div class="price">
+                <p class="val">$53.00</p>
+                <p class="label">Стоимость</p>
+            </div>
+        </div>
+        <div class="foot">
+            <p>Если сумма трех сторон посылки более 150см и объемный вес в 2 и более раз превышает физический вес, может
+                быть добавлена наценка $4,5 за кг на сумму разницы между объемным и физическим весом. Сумма прибавляется
+                к стоимости доставки физического веса посылки по выбранному тарифу.
+                <a href="#">Подробнее про рассчет объемного веса.</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid discounts-block">
+        <p class="heading">Скидки и бонусы для постоянных клиентов</p>
+        <div class="grid">
+            <div class="item">
+                <div class="row">
+                    <div class="image">
+                        <img src="img/logos/1.svg" alt="">
+                    </div>
+                    <p class="title">SUPERFAST</p>
+                </div>
+                <p class="size">10%</p>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="image">
+                        <img src="img/logos/express.png" alt="">
+                    </div>
+                    <p class="title">EXPRESS</p>
+                </div>
+                <p class="size">20%</p>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="image">
+                        <img src="img/logos/express.png" alt="">
+                    </div>
+                    <p class="title">FASTBOX</p>
+                </div>
+                <p class="size">15%</p>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="image">
+                        <img src="img/logos/econom.png" alt="">
+                    </div>
+                    <p class="title">Econom</p>
+                </div>
+                <p class="size">15%</p>
+            </div>
+        </div>
+        <a href="#" class="link">Подробнее про условия получения скидок и других бонусов</a>
+    </div>
+
+    <div class="container-fluid warehouse">
+        <p class="heading">Услуги склада</p>
+        <div class="grid">
+            <div class="item">
+                <div class="top">
+                    <div class="image">
+                        <img src="img/warehouse1.png" alt="">
+                    </div>
+                    <p class="title">Хранение посылок<span>бесплатно</span></p>
+                </div>
+                <div class="bottom">
+                    <p class="text">Первые 70 дней</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="top">
+                    <div class="image">
+                        <img src="img/warehouse2.png" alt="">
+                    </div>
+                    <p class="title">Объединение посылок в одну<span>бесплатно</span></p>
+                </div>
+                <div class="bottom">
+                    <p class="text">Чем больше вес, тем выгоднее доставка</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="top">
+                    <div class="image">
+                        <img src="img/warehouse3.png" alt="">
+                    </div>
+                    <p class="title">Хранение собранных посылок<span>бесплатно</span></p>
+                </div>
+                <div class="bottom">
+                    <p class="text">Первые 14 дней</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="top">
+                    <div class="image">
+                        <img src="img/warehouse4.png" alt="">
+                    </div>
+                    <p class="title">Хранение посылок более 14 дней<span>$1 в день</span></p>
+                </div>
+                <div class="bottom">
+                    <p class="text">Если посылка не была оплачена в течение 7 дней с момента сборки. За каждый день
+                        дополнительного хранения.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid warehouse-services">
+        <div class="item full">
+            <div class="heading big">
+                <p>Сборка исходящей посылки вне очереди (экспресс сборка)</p>
+            </div>
+            <div class="content">
+                <p class="description">Чтобы сэкономить время</p>
+                <p class="price w-270">$4.99</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="item">
+                    <div class="heading">
+                        <p>Фото и видео содержимого входящей посылки</p>
+                    </div>
+                    <div class="content">
+                        <p class="description">Три фото выбранного вами товара или три общих фото товаров в одной
+                            входящей посылке</p>
+                        <p class="price">от $3</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="heading">
+                        <p>Перенос входящей посылки между<br>аккаунтами клиентов</p>
+                    </div>
+                    <div class="content">
+                        <p class="description">Запрос подается через тикеты.</p>
+                        <p class="price">$3</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="heading">
+                        <p>Проверка техники на работоспособность</p>
+                    </div>
+                    <div class="content">
+                        <p class="description">Проверка электроники на включение/выключение (запрос через тикеты).</p>
+                        <p class="price">$10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <div class="heading">
+                        <p>Смена службы доставки</p>
+                    </div>
+                    <div class="content">
+                        <p class="description">Без изменения состава посылки. Возможность смены службы для вашей посылки
+                            уточняйте в службе поддержки</p>
+                        <p class="price">$10 (все службы)</p>
+                        <p class="price">$15 (Express и FastBox)</p>
+                        <p class="foot">Недоступно для доставки SuperFast</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="heading">
+                        <p>Возврат вещей в магазин</p>
+                    </div>
+                    <div class="content">
+                        <p class="description">В случае, если вещи нельзя отправить в страну назначения (из-за
+                            превышения габаритов, запрета перевозчиков и таможенных служб), возврат в магазин для услуги
+                            "Виртуальный адрес"</p>
+                        <p class="price">$10 + почтовые расходы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="title-block">Покупки с операторами Pochtoy.com</p>
+        <div class="item full">
+            <div class="heading medium">
+                <p>Быстрое оформление покупок в интернет-магазинах</p>
+            </div>
+            <div class="content">
+                <p class="description w-850">Вы присылаете ссылки, а оформлением заказов занимаются операторы
+                    Почтой.ком. Они
+                    сделают покупки за вас, проконтролируют доставку на склад и сообщат, когда всё будет готово.</p>
+                <div class="row">
+                    <p class="price">7% от стоимости товаров</p>
+                    <p class="price">минимум 7$ для каждого магазина</p>
+                    <p class="price">Но не менее 7$ для каждого лота eBay</p>
+                </div>
+            </div>
+        </div>
+        <div class="item full">
+            <div class="heading medium">
+                <p>Фото товара по услуге "Покупка с операторами"</p>
+            </div>
+            <div class="content">
+                <p class="description w-850">Три фото выбранного вами товара, приобретенного по услуге "Полное
+                    сопровождение"</p>
+                <div class="row">
+                    <p class="price">$2</p>
+                </div>
+            </div>
+        </div>
+        <div class="item full">
+            <div class="heading medium">
+                <p>Заполнение декларации оператором</p>
+            </div>
+            <div class="content">
+                <p class="description w-850">Если в посылке только товары, выкупленные по услуге «покупка с оператором»,
+                    операторы заполнят декларацию вместо вас, сэкономив ваше время.</p>
+                <div class="row">
+                    <p class="price">$5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid masters with-form">
+        <div class="image-block">
+            <img src="img/pic19.png" alt="">
+            <p>Не надо заморачиваться над заказом</p>
+        </div>
+        <div class="description-block">
+            <p class="big">Попробуйте заказывать с оператором прямо сейчас. Пришлите ссылку на товар, его купят и
+                доставят на наш склад в кратчайшие сроки.</p>
+            <p class="small">Ссылка на товары:</p>
+            <input type="text" name="url" placeholder="http://">
+            <div class="row">
+                <button class="btn">Отправить посылку</button>
+                <p class="terms">Нажимая на кнопку вы подтверждаете согласие с правилами предоставления услуги и
+                    политикой
+                    конфиденциальности</p>
+            </div>
+            <a href="#" class="link">Подробнее про условия получения скидок и других бонусов</a>
+        </div>
+    </div>
+
+    <div class="container-fluid warehouse-services">
+        <p class="title-block">Страхование</p>
+        <div class="item full">
+            <div class="heading medium">
+                <p>Страховка от утери или недоставки посылки и кражи вложений</p>
+            </div>
+            <div class="content">
+                <p class="description w-850">• Все службы доставки, кроме USPS и Новой Почты.<br>
+                    • Зависит от стоимости товаров в посылке.<br>
+                    • Страховка является обязательной и будет включена в стоимость доставки.</p>
+                <div class="row">
+                    <p class="price">до $100 — $3</p>
+                    <p class="price">до $500 — $5</p>
+                    <p class="price">до $1000 — $7.5</p>
+                    <p class="price">от $1000 — $15</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="item">
+                    <div class="heading">
+                        <p>Страховка от утери недоставки посылки для<br>USPS и Новой Почты</p>
+                    </div>
+                    <div class="content without-description">
+                        <p class="price">$3, за каждые $100</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <div class="heading">
+                        <p>Страхование стоимости доставки</p>
+                    </div>
+                    <div class="content without-description">
+                        <p class="price">$3, за каждые $100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="title-block">Дополнительная упаковка</p>
+        <div class="row">
+            <div class="col">
+                <div class="item mb-s">
+                    <div class="heading with-margin">
+                        <p>Многослойная пленка</p>
+                    </div>
+                    <div class="content">
+                        <p class="description">Дополнительная защита покупок</p>
+                        <p class="price">$3.99</p>
+                    </div>
+                </div>
+                <div class="item mb-s">
+                    <div class="heading with-margin">
+                        <p>Упаковка в коробку с двойными стенками</p>
+                    </div>
+                    <div class="content">
+                        <p class="description">Надежно защищает от влаги</p>
+                        <p class="price">$4.99</p>
+                    </div>
+                </div>
+                <div class="item mb-s">
+                    <div class="heading with-margin">
+                        <p>Наклейка “Хрупкий груз” </p>
+                    </div>
+                    <div class="content">
+                        <p class="description">Дополнительная защита покупок</p>
+                        <p class="price">$0.25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item mb-s">
+                    <div class="heading with-margin">
+                        <p>Упаковка в пакет</p>
+                    </div>
+                    <div class="content">
+                        <p class="description">Надежно защищает от влаги</p>
+                        <p class="price">$1.99</p>
+                    </div>
+                </div>
+                <div class="item mb-s">
+                    <div class="heading with-margin">
+                        <p>Наклейка “Обращаться с осторожностью” </p>
+                    </div>
+                    <div class="content">
+                        <p class="description">Дополнительная защита покупок</p>
+                        <p class="price">$0.25</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="title-block">Автоматическая оплата пошлины</p>
+        <div class="item full">
+            <div class="heading medium">
+                <p>Оплата пошлины для быстрого прохождения таможни</p>
+            </div>
+            <div class="content">
+                <p class="description w-850">На посылки стоимостью свыше 200 евро, только для России. Брокерский сбор:
+                </p>
+                <div class="row">
+                    <p class="price">4% от стоимости товаров по декларации</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacts-wrap">
+        <div class="contacts">
+            <div class="col">
+                <p class="copyright">© 2021 Pochtoy.com LLC . Все права защищены.</p>
+                <p class="address">510 Carroll Dr, New Castle, DE, 19720, United States</p>
+                <a href="tel:+14125673010" class="tel">+1 (412) 567-30-10</a>
+            </div>
+            <div class="col">
+                <p class="title">Устанавливайте бота Телеграм</p>
+                <ul class="social">
+                    <li class="item">
+                        <a class="link tg" href="https://t.me/PochtoyUS_bot"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <p class="title">Подписывайтесь на новости о распродажах</p>
+                <ul class="social">
+                    <li class="item">
+                        <a class="link vk" href="https://vk.com/clubpochtoy"></a>
+                    </li>
+                    <li class="item">
+                        <a class="link fb" href="https://m.facebook.com/pochtoy"></a>
+                    </li>
+                    <li class="item">
+                        <a class="link in" href="https://www.instagram.com/pochtoy.usa/"></a>
+                    </li>
+                    <li class="item">
+                        <a class="link in1" href="https://instagram.com/pochtoy.baby"></a>
+                    </li>
+                    <li class="item">
+                        <a class="link tg" href="https://t.me/PochtoyUS_bot"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid footer">
+        <div class="col">
+            <p class="title">О компании</p>
+            <ul class="nav">
+                <li class="item">
+                    <a href="/services/">Услуги</a>
+                </li>
+                <li class="item">
+                    <a href="/prices/">Цены</a>
+                </li>
+                <li class="item">
+                    <a href="/reviews/">Отзывы</a>
+                </li>
+                <li class="item">
+                    <a href="/contacts/">Контакты</a>
+                </li>
+                <li class="item">
+                    <a href="/landings/vacancies/">Вакансии</a>
+                </li>
+                <li class="item">
+                    <a href="/policy/">Соглашение о персональных данных</a>
+                </li>
+                <li class="item">
+                    <a href="/agreement/">Условия использования</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <p class="title">Полезное</p>
+            <ul class="nav">
+                <li class="item">
+                    <a href="/how-to-buy/">Как работает наш сервис</a>
+                </li>
+                <li class="item">
+                    <a href="/fast-buy/">Как покупать с оператором</a>
+                </li>
+                <li class="item">
+                    <a href="/faq/">Ответы на частые вопросы</a>
+                </li>
+                <li class="item">
+                    <a href="/shops/">Популярные магазины</a>
+                </li>
+                <li class="item">
+                    <a href="/black-list/">Черный список магазинов</a>
+                </li>
+                <li class="item">
+                    <a href="/sales/">Актуальные распродажи</a>
+                </li>
+                <li class="item">
+                    <a href="/size/">Как подобрать американский размер</a>
+                </li>
+                <li class="item">
+                    <a href="/faq/tolls/">Как рассчитать таможенную пошлину</a>
+                </li>
+                <li class="item">
+                    <a href="/forbidden-items/">Что мы не доставляем</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <p class="title">Спецпроекты</p>
+            <ul class="nav">
+                <li class="item">
+                    <a href="/landings/50/">50% на первую доставку</a>
+                </li>
+                <li class="item">
+                    <a href="/buyer/">Скидки для постоянных клиентов</a>
+                </li>
+                <li class="item">
+                    <a href="/affiliates/">Реферальная программа</a>
+                </li>
+                <li class="item">
+                    <a href="/landings/cashback-mrrebates-ebates/">Кэшбек Mr. Rebates и Rakuten</a>
+                </li>
+                <li class="item">
+                    <a href="/garage-sale/">Гаражная распродажа</a>
+                </li>
+                <li class="item">
+                    <a href="/stop-fraud/">Stop Fraud</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

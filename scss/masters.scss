@@ -1,0 +1,220 @@
+.masters {
+  margin: 176px auto 0;
+  display: flex;
+  flex-direction: row;
+
+  .image-block {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 40px;
+    background: #ffffff;
+    box-shadow: 0px 0px 60px #d5eaf1;
+    border-radius: 60px;
+
+    p {
+      margin-top: 8px;
+      text-align: center;
+      font-family: "Gilroy";
+      font-size: 24px;
+      line-height: 33px;
+      color: #000000;
+    }
+
+    span {
+      margin-top: 10px;
+      max-width: 186px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #586271;
+    }
+  }
+
+  .description-block {
+    margin-left: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      span {
+        color: #ff006d;
+      }
+
+      &.big {
+        max-width: 697px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 50px;
+        color: #000000;
+      }
+
+      &.small {
+        margin-top: 25px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        color: #586271;
+      }
+    }
+
+    .btn {
+      @include btnBig(#fff, #3a78bc, #3a78bc);
+      margin-top: 40px;
+
+      &:hover {
+        @include btnBigHover;
+      }
+    }
+  }
+
+  &.with-form {
+    align-items: flex-start;
+
+    .image-block {
+      padding-top: 56px;
+
+      p {
+        max-width: 187px;
+        margin-top: 30px;
+      }
+    }
+
+    .description-block {
+      padding-top: 30px;
+      width: calc(100% - 260px - 78px);
+
+      p {
+        &.big {
+          max-width: 810px;
+          font-family: Gilroy;
+          font-size: 24px;
+          line-height: 38px;
+          color: #000000;
+        }
+
+        &.small {
+          margin-top: 5px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          color: #454e58;
+        }
+      }
+
+      input[type="text"] {
+        margin-top: 15px;
+        padding: 20px 40px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: #616e81;
+        background: #ffffff;
+        box-shadow: 0px 0px 60px #d5eaf1;
+        border-radius: 10px;
+      }
+
+      .row {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+
+        .terms {
+          margin-left: 50px;
+          max-width: 511px;
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+
+        .btn {
+          margin-top: 0;
+        }
+      }
+
+      .link {
+        margin-top: 16px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 60px;
+        text-decoration-line: underline;
+        color: #3a78bc;
+      }
+    }
+  }
+
+  &.with-photo {
+    .image-block {
+      padding-top: 56px;
+
+      p {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .masters {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .masters {
+    .image-block {
+      width: auto;
+    }
+    .description-block {
+      margin-left: 40px;
+      p {
+        &.big {
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .masters {
+    flex-direction: column;
+    .image-block {
+      margin-bottom: 20px;
+    }
+    .description-block {
+      margin-left: 0;
+      margin-top: 10px;
+      p {
+        &.big {
+          font-size: 18px;
+        }
+        &.small {
+          font-size: 16px;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+}

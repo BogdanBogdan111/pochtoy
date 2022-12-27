@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>pochtoy.com</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <a href="/" class="logo">
+          <img src="img/logo.svg" alt="" />
+        </a>
+        <div class="lang-selector">
+          <img src="img/flags/rus.svg" alt="" class="flag" />
+          <p>Рус</p>
+          <button class="open"></button>
+        </div>
+        <ul>
+          <li><a href="#">Как покупать</a></li>
+          <li><a href="#">Распродажи</a></li>
+          <li><a href="#">Цены</a></li>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Бонусы</a></li>
+          <li><a href="#">Блог</a></li>
+          <li class="parent"><a href="#">Еще</a></li>
+        </ul>
+        <button class="btn btn-pink">Заказать товар из США</button>
+        <div class="alert-block active"></div>
+        <a href="#" class="login">Войти</a>
+      </div>
+    </header>
+
+    <div class="container-fluid title-block">
+      <ul class="breadcrumbs pos-abs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Часто задаваемые вопросы</a></li>
+        <li><a href="#">Калькулятор пошлины</a></li>
+      </ul>
+      <div>
+        <p class="title">Калькулятор пошлины</p>
+        <p class="text semibold">
+          * С 1 января 2020 года беспошлинный лимит ввоза товаров в Россию снизился до 200 евро и 31
+          кг на одну посылку или несколько посылок, если они проходят таможню одновременно, в один
+          день.
+        </p>
+        <p class="text default">
+          Пошлина составляет 15% от суммы превышения. Пошлина рассчитывается на каждую посылку, а не
+          на все посылки за месяц как было до 2020 года. То есть, если в течение одного месяца вы
+          отправили 10 посылок в разных партиях с товарами на 199 евро каждая и легче 31 кг, пошлину
+          начислять не будут. Дополнительно при превышении лимита необходимо оплатить таможенные
+          сборы в сумме 500 рублей. Если посылка весит больше 31 – пошлина будет составлять не менее
+          €2 за кг перевеса.Посылки, прибывшие на таможню одновременно в составе одной партии, могут
+          трактоваться как одно отправление. Календарным месяцем считается период с первого по
+          последнее число каждого месяца.
+        </p>
+      </div>
+      <div class="img">
+        <img src="img/calc1.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container-fluid calculator-poshlin">
+      <div class="formula">Формула расчета пошлины: (Цена товара – 200 евро)*15% + 500 р.</div>
+
+      <div class="heading">
+        <p class="title">Калькулятор пошлины</p>
+        <p class="text">Чтобы вы не рассчитывали пошлину вручную, мы сделали этот калькулятор.</p>
+      </div>
+
+      <div class="settings">
+        <div class="dropdowns">
+          <div class="dropdown">
+            <div class="img">
+              <img src="img/global.svg" alt="" />
+            </div>
+            <div class="info">
+              <p class="name">Валюта</p>
+              <div class="nav">
+                <p class="selected">
+                  Выберите валюту
+                  <span class="ico">
+                    <img src="img/icons/arr-down_black.svg" alt="" />
+                  </span>
+                </p>
+                <ul class="list">
+                  <li class="item">Выберите валюту</li>
+                  <li class="item">Выберите валюту</li>
+                  <li class="item">Выберите валюту</li>
+                  <li class="item">Выберите валюту</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="img">
+              <img src="img/global.svg" alt="" />
+            </div>
+            <div class="info">
+              <p class="name">Цена продажи</p>
+              <div class="nav">
+                <p class="selected">
+                  Выберите цену
+                  <span class="ico">
+                    <img src="img/icons/arr-down_black.svg" alt="" />
+                  </span>
+                </p>
+                <ul class="list">
+                  <li class="item">Выберите цену</li>
+                  <li class="item">Выберите цену</li>
+                  <li class="item">Выберите цену</li>
+                  <li class="item">Выберите цену</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="information">
+        <div class="list">
+          <div class="row">
+            <p class="title bold">Цена товара</p>
+            <p class="price">$250.00 или примерно 18402р.</p>
+          </div>
+          <div class="row">
+            <p class="title medium">Фиксированный сбор</p>
+            <p class="price">$6.79 или 500р.</p>
+          </div>
+          <div class="row">
+            <p class="title medium">
+              Фиксированный сбор <span class="gray">Рассчет по цене товара</span>
+            </p>
+            <p class="price">$2.08 или примерно 153р.</p>
+          </div>
+          <div class="row">
+            <p class="title bold">Цена товара с пошлиной</p>
+            <p class="price">$258.87 или примерно 19055р.</p>
+          </div>
+        </div>
+        <div class="bottom">
+          Внимание! Итоговая сумма является приблизительной. Точная сумма может быть расчитана в
+          день прохождения таможни по актуальному курсу.
+        </div>
+      </div>
+
+      <div class="how-to">
+        <p class="title">Как оплачивать пошлину</p>
+        <div class="description">
+          <p>
+            Для посылок, отправленных Эконом, Эконом лайт и EMS Russia пошлину можно оплатить в
+            отделении при получении посылки.
+          </p>
+          <p>
+            Для посылок, отправленных Superfast, FastBox и Express – оплата пошлины происходит
+            онлайн во время пребывания посылки на таможне. Чтобы ускорить прохождение таможни вы
+            можете оплатить пошлину во время оформления доставки прямо у нас на сайте.
+          </p>
+        </div>
+        <a href="" class="link">Подробнее про процедуру оплаты</a>
+      </div>
+    </div>
+
+    <div class="contacts-wrap">
+      <div class="contacts">
+        <div class="col">
+          <p class="copyright">© 2021 Pochtoy.com LLC . Все права защищены.</p>
+          <p class="address">510 Carroll Dr, New Castle, DE, 19720, United States</p>
+          <a href="tel:+14125673010" class="tel">+1 (412) 567-30-10</a>
+        </div>
+        <div class="col">
+          <p class="title">Устанавливайте бота Телеграм</p>
+          <ul class="social">
+            <li class="item">
+              <a class="link tg" href="https://t.me/PochtoyUS_bot"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="title">Подписывайтесь на новости о распродажах</p>
+          <ul class="social">
+            <li class="item">
+              <a class="link vk" href="https://vk.com/clubpochtoy"></a>
+            </li>
+            <li class="item">
+              <a class="link fb" href="https://m.facebook.com/pochtoy"></a>
+            </li>
+            <li class="item">
+              <a class="link in" href="https://www.instagram.com/pochtoy.usa/"></a>
+            </li>
+            <li class="item">
+              <a class="link in1" href="https://instagram.com/pochtoy.baby"></a>
+            </li>
+            <li class="item">
+              <a class="link tg" href="https://t.me/PochtoyUS_bot"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid footer">
+      <div class="col">
+        <p class="title">О компании</p>
+        <ul class="nav">
+          <li class="item">
+            <a href="/services/">Услуги</a>
+          </li>
+          <li class="item">
+            <a href="/prices/">Цены</a>
+          </li>
+          <li class="item">
+            <a href="/reviews/">Отзывы</a>
+          </li>
+          <li class="item">
+            <a href="/contacts/">Контакты</a>
+          </li>
+          <li class="item">
+            <a href="/landings/vacancies/">Вакансии</a>
+          </li>
+          <li class="item">
+            <a href="/policy/">Соглашение о персональных данных</a>
+          </li>
+          <li class="item">
+            <a href="/agreement/">Условия использования</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <p class="title">Полезное</p>
+        <ul class="nav">
+          <li class="item">
+            <a href="/how-to-buy/">Как работает наш сервис</a>
+          </li>
+          <li class="item">
+            <a href="/fast-buy/">Как покупать с оператором</a>
+          </li>
+          <li class="item">
+            <a href="/faq/">Ответы на частые вопросы</a>
+          </li>
+          <li class="item">
+            <a href="/shops/">Популярные магазины</a>
+          </li>
+          <li class="item">
+            <a href="/black-list/">Черный список магазинов</a>
+          </li>
+          <li class="item">
+            <a href="/sales/">Актуальные распродажи</a>
+          </li>
+          <li class="item">
+            <a href="/size/">Как подобрать американский размер</a>
+          </li>
+          <li class="item">
+            <a href="/faq/tolls/">Как рассчитать таможенную пошлину</a>
+          </li>
+          <li class="item">
+            <a href="/forbidden-items/">Что мы не доставляем</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <p class="title">Спецпроекты</p>
+        <ul class="nav">
+          <li class="item">
+            <a href="/landings/50/">50% на первую доставку</a>
+          </li>
+          <li class="item">
+            <a href="/buyer/">Скидки для постоянных клиентов</a>
+          </li>
+          <li class="item">
+            <a href="/affiliates/">Реферальная программа</a>
+          </li>
+          <li class="item">
+            <a href="/landings/cashback-mrrebates-ebates/">Кэшбек Mr. Rebates и Rakuten</a>
+          </li>
+          <li class="item">
+            <a href="/garage-sale/">Гаражная распродажа</a>
+          </li>
+          <li class="item">
+            <a href="/stop-fraud/">Stop Fraud</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

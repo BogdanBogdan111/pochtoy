@@ -1,0 +1,30 @@
+.grid-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 167px auto 0;
+}
+
+@media (max-width: 1180px) {
+  .grid-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 15px;
+    .block {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-nav {
+    margin-top: 60px;
+    grid-template-columns: 1fr;
+    a {
+      text-align: center;
+    }
+  }
+}

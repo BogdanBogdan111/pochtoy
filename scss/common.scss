@@ -1,0 +1,82 @@
+.content-area {
+  width: 100%;
+  max-width: $maxWidthContent;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shadow-block {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px #d1e6fb;
+  border-radius: 7px;
+}
+
+.flex-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.container-fluid {
+  position: relative;
+  width: 100%;
+  max-width: $maxWidthContent;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+.btn {
+  @include btn(#fff, #ff006d, 0 13px);
+
+  &.with-border {
+    color: #5b72ec;
+    background-color: #fff;
+    border: 2px solid #5b72ec;
+  }
+
+  &.blue {
+    color: #fff;
+    background-color: #5b72ec;
+    border: 2px solid #5b72ec;
+  }
+}
+
+select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  color: #3a78bc;
+  padding: 7px 10px 7px 10px;
+  min-width: 300px;
+  height: 39px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  background: #fff url("../img/icons/arrow-down.svg") no-repeat;
+  background-position: calc(100% - 5px) center;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  -ms-appearance: none;
+  transition: border-color 0.4s linear;
+  vertical-align: middle;
+}
+
+@media (max-width: 1180px) {
+  .content-area {
+    flex-wrap: wrap;
+  }
+}
